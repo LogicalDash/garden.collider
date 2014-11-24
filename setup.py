@@ -4,5 +4,8 @@ from distutils.extension import Extension
 #Cython.Compiler.Options.annotate = True
 from Cython.Distutils import build_ext
 
-setup(cmdclass={'build_ext': build_ext},
-      ext_modules=[Extension("collider", ["collider.pyx"])])
+setup(
+      name='kivy.garden.collider',
+      cmdclass={'build_ext': build_ext},
+      ext_modules=[Extension("collider", ["collider.pyx"])]
+)
